@@ -34,6 +34,10 @@ cepInput.addEventListener("blur", () => {
 
 
             })
+            .catch(error =>{
+                alert("Erro ao buscar o CEP")
+                console.error(error)
+            })
     } else {
         alert("CEP INVÁLIDO!")
     }
